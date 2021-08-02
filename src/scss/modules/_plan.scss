@@ -1,0 +1,48 @@
+.plan {
+  padding: 55.89px 0;
+  background: linear-gradient(180deg, #595755 0%, #2b2a29 100%);
+  border-radius: 38px;
+  margin-bottom: 146.68px;
+  img {
+    left: 96.85px;
+  }
+  &__wrapper {
+    max-width: 550px;
+    h2 {
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 1.228em;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: $fontFamily;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.208em;
+      color: #ffffff;
+    }
+  }
+  button {
+    margin-right: 79px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .plan {
+    padding: 20px 30px;
+    &__wrapper {
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 35px;
+      }
+    }
+    button {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.info {
+  padding: 123px 0 103px;
+  h2 {
+    margin-bottom: 52px;
+  }
+  &__left {
+    max-width: 683px;
+  }
+  &__item {
+    max-width: 327px;
+    padding: 39px 18px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 29px;
+    margin-bottom: 30px;
+    h3 {
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.208em;
+      text-align: center;
+      color: $secondaryColor;
+    }
+    p {
+      font-family: $fontFamily;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25em;
+      text-align: center;
+      color: $mainColorText;
+    }
+  }
+  &__text {
+    position: relative;
+    padding: 32.6px 35.72px 80.5px 31.5px;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+    color: $mainColorText;
+    background: url(../src/img/info-bg.png) no-repeat;
+    &::before {
+      content: '“';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: -55.4px;
+      left: -32.5px;
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: 148px;
+      line-height: 1.216em;
+      text-align: center;
+      color: $mainColorText;
+    }
+  }
+  &__footer {
+    h4 {
+      font-family: $fontFamily;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.25em;
+      text-align: right;
+      color: $mainColorText;
+      margin-bottom: 4px;
+    }
+    p {
+      max-width: 250px;
+      font-family: $fontFamily;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25em;
+      text-align: right;
+      color: $mainColorText;
+      opacity: 0.7;
+    }
+    svg {
+      margin-left: 34px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .info {
+    padding: 100px 0 100px;
+    &__left {
+      max-width: 100%;
+    }
+    &__item {
+      max-width: 48%;
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    &__text {
+      padding: 22.6px 201.72px 112.5px 31.5px;
+    }
+  }
+}

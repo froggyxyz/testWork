@@ -1,0 +1,38 @@
+.intro.d-flex.align-items-center
+  .container
+    #introSlider.carousel.slide(data-bs-ride="carousel")
+      .carousel-inner.js-intro-slider
+        .carousel-item.active
+          .intro__wrapper.d-flex.flex-column.align-items-start.position-relative.mx-auto
+            h1.title
+              span.red Автомойки 
+              | самообслуживания
+            p Строим «под ключ» — от проекта до запуска 
+              | Поставляем оборудование мирового уровня 
+              | Переоборудуем обычные мойки в автоматизированные
+            button.btn.btn_black Как это работает?
+            img.d-none.d-xl-block.position-absolute(src="src/img/feat-carwash.png")
+        .carousel-item
+          .intro__wrapper.d-flex.flex-column.align-items-start.position-relative.mx-auto
+            h1.title
+              span.red Автомойки 
+              | самообслуживания
+            p Строим «под ключ» — от проекта до запуска 
+              | Поставляем оборудование мирового уровня 
+              | Переоборудуем обычные мойки в автоматизированные
+            button.btn.btn_black Как это работает?
+            img.d-none.d-xl-block.position-absolute(src="src/img/feat-carwash.png")
+        .carousel-item
+          .intro__wrapper.d-flex.flex-column.align-items-start.position-relative.mx-auto
+            h1.title
+              span.red Автомойки 
+              | самообслуживания
+            p Строим «под ключ» — от проекта до запуска 
+              | Поставляем оборудование мирового уровня 
+              | Переоборудуем обычные мойки в автоматизированные
+            button.btn.btn_black Как это работает?
+            img.d-none.d-lg-block.position-absolute(src="src/img/feat-carwash.png")
+    button.control.control_prev.js-intro-prev.position-absolute.d-none.d-lg-block(type="button", data-bs-target="#introSlider", data-bs-slide="prev")
+      img(src="src/img/intro/btnPrev.png", alt="", aria-hidden="true")
+    button.control.control_next.js-intro-next.position-absolute.d-none.d-lg-block(type="button", data-bs-target="#introSlider", data-bs-slide="next")
+      img(src="src/img/intro/btnNext.png", alt="", aria-hidden="true")

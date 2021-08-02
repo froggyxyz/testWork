@@ -1,0 +1,64 @@
+.red {
+  color: $secondaryColor !important;
+}
+
+.title {
+  font-family: $fontFamily;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.45em;
+  color: $mainColorText;
+}
+
+.btn {
+  padding: 15px 45px;
+  font-family: $fontFamily;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  &_yellow {
+    color: $mainColorText;
+    background: linear-gradient(0deg, #ffe59a 0%, #ffffd5 100%);
+    border-radius: 38px;
+    animation: bg-yellow-btn-unhover 0.2s linear forwards;
+    &:hover {
+      animation: bg-yellow-btn 0.2s linear forwards;
+    }
+  }
+  &_black {
+    color: #ffffff;
+    background: linear-gradient(180deg, #595755 0%, #2b2a29 100%);
+    border-radius: 38px;
+    animation: bg-black-btn-unhover 0.2s linear forwards;
+    &:hover {
+      animation: bg-black-btn 0.2s linear forwards;
+    }
+  }
+}
+
+.js-to-top {
+  opacity: 0.5;
+  right: 39.45px;
+  bottom: 41.5px;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 30px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+}

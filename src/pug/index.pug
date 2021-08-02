@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+  include modules/head.pug
+  body
+    a#up.d-none.js-to-top.position-fixed(href="#")
+      img(src="src/img/toTop.png", alt="")
+    include modules/menu.pug
+    include modules/nav.pug
+    include modules/header.pug
+    main
+      include modules/intro.pug
+      include modules/info.pug
+      include modules/decisions.pug
+      include modules/business.pug
+      include modules/banner.pug
+      include modules/differents.pug
+      include modules/team.pug
+      include modules/certificates.pug
+      include modules/school.pug
+      include modules/plan.pug
+    include modules/footer.pug
+    script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(type="text/javascript" src="slick/slick.min.js")
+    script(src="bootstrap/js/dist/carousel.js")
+    script(type="text/javascript" src="js/index.js")

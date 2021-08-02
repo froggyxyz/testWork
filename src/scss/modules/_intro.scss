@@ -1,0 +1,72 @@
+.intro {
+  padding: 120px 0 118px;
+  background: linear-gradient(
+      180deg,
+      rgba(43, 42, 41, 0.04) 43.23%,
+      rgba(43, 42, 41, 0.04) 70.83%,
+      rgba(43, 42, 41, 0.01) 88.06%,
+      rgba(43, 42, 41, 0.04) 100%
+    ),
+    url(../src/img/intro-bg.png) no-repeat 520px 37.51px;
+  &__wrapper {
+    padding: 65.82px 56px 58.82px;
+    background: url(../src/img/introSec-bg.png) no-repeat;
+    h1 {
+      max-width: 536px;
+      font-size: 50px;
+      line-height: 1.16em;
+      margin-bottom: 26px;
+    }
+    p {
+      max-width: 533px;
+      font-family: $fontFamily;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.38em;
+      color: $mainColorText;
+      margin-bottom: 54px;
+    }
+    img {
+      left: 595px;
+      bottom: -26.82px;
+    }
+  }
+  .control {
+    border: none;
+    background: none;
+    &:hover {
+      img {
+        opacity: 1;
+        transition: all 0.2s linear;
+      }
+    }
+    &_prev {
+      top: 50%;
+      left: 50px;
+    }
+    &_next {
+      top: 50%;
+      right: 50px;
+    }
+    img {
+      opacity: 0.5;
+      transition: all 0.2s linear;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .intro {
+    padding: 100px 0 100px;
+    &__wrapper {
+      max-width: 580px;
+      border-radius: 35px;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

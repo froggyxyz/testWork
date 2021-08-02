@@ -1,0 +1,84 @@
+.business {
+  padding: 120px 0;
+  background: url(../src/img/business-bg.png) no-repeat;
+  &__wrapper {
+    max-width: 566px;
+    h2 {
+      margin-bottom: 33px;
+    }
+    p {
+      margin-bottom: 52px;
+      font-family: $fontFamily;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25em;
+      color: $mainColorText;
+    }
+    button {
+      margin-bottom: 127px;
+    }
+  }
+  &__slider {
+    bottom: -10px;
+    right: -107px;
+    max-width: 820px;
+  }
+  .slider-item {
+    margin-right: 30px;
+    overflow: hidden;
+    max-width: 645px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 29px;
+    &--text {
+      padding: 34px;
+      h3 {
+        font-family: $fontFamily;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22em;
+        margin-bottom: 9px;
+      }
+      p {
+        font-family: $fontFamily;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25em;
+        color: #000000;
+      }
+    }
+  }
+  .control {
+    border: none;
+    background: none;
+    img {
+      opacity: 0.7;
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      img {
+        opacity: 1;
+        transition: all 0.2s linear;
+      }
+    }
+    &_prev {
+      bottom: 0;
+      left: 30%;
+    }
+    &_next {
+      bottom: 0;
+      left: 37%;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .business {
+    padding: 100px 0;
+    &__wrapper {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

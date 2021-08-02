@@ -1,0 +1,27 @@
+.menu {
+  padding: 30px 0;
+  z-index: 2;
+  width: 100%;
+  background: #fff;
+  top: -85px;
+  border-top: 1px solid #000;
+  &__list {
+    a {
+      padding: 5px 0;
+      font-family: $fontFamily;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.25em;
+      color: $mainColorText;
+      transition: all 0.2s linear;
+      &:hover {
+        text-shadow: 2px 2px 5px rgb(126, 126, 126);
+        transition: all 0.2s linear;
+      }
+    }
+  }
+}
+
+.open-menu {
+  animation: open-menu 0.5s linear forwards;
+}

@@ -1,0 +1,213 @@
+.differents {
+  padding: 102px 0 118px;
+  h2 {
+    margin-bottom: 23px;
+  }
+  &__wrapper {
+    min-height: 767px;
+    background: linear-gradient(
+      179.66deg,
+      rgba(255, 213, 0, 0.62) 0.23%,
+      rgba(255, 237, 74, 0.62) 31.89%,
+      rgba(255, 237, 145, 0.62) 99.64%
+    );
+    border-radius: 25px;
+    img {
+      width: 42%;
+    }
+  }
+  &__item {
+    position: relative;
+    h3 {
+      font-family: $fontFamily;
+      font-weight: 700;
+      font-size: 24.9933px;
+      line-height: 1.2em;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: $fontFamily;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25em;
+      color: #000000;
+    }
+    &_1 {
+      p {
+        max-width: 257px;
+      }
+      top: 120px;
+      left: 100px;
+      &::after {
+        content: '';
+        width: 179.51px;
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 265px;
+        border: 2.67785px dashed #e32124;
+        transform: rotate(-134.07deg);
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 181px;
+        left: 413px;
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border: 1px solid #e32124;
+        border-radius: 50%;
+      }
+    }
+    &_2 {
+      max-width: 248px;
+      top: 353.87px;
+      left: 63px;
+      &::after {
+        content: '';
+        width: 105.51px;
+        display: block;
+        position: absolute;
+        top: 79px;
+        left: 250px;
+        border: 2.67785px dashed #e32124;
+        transform: rotate(-143.07deg);
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 110px;
+        left: 345px;
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border: 1px solid #e32124;
+        border-radius: 50%;
+      }
+    }
+    &_3 {
+      max-width: 518.61px;
+      left: 360.24px;
+      bottom: 100px;
+      &::after {
+        content: '';
+        width: 60.51px;
+        display: block;
+        position: absolute;
+        top: -32px;
+        left: 199px;
+        border: 2.67785px dashed #e32124;
+        transform: rotate(-234.07deg);
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -62px;
+        left: 244px;
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border: 1px solid #e32124;
+        border-radius: 50%;
+      }
+    }
+    &_4 {
+      max-width: 285.64px;
+      right: 57.64px;
+      bottom: 175px;
+      &::after {
+        content: '';
+        width: 97.51px;
+        display: block;
+        position: absolute;
+        top: 31px;
+        left: -120px;
+        border: 2.67785px dashed #e32124;
+        transform: rotate(-188.07deg);
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 34px;
+        left: -131px;
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border: 1px solid #e32124;
+        border-radius: 50%;
+      }
+    }
+    &_5 {
+      max-width: 265.11px;
+      top: 120px;
+      right: 79.45px;
+      &::after {
+        content: '';
+        width: 150.51px;
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: -154px;
+        border: 2.67785px dashed #e32124;
+        transform: rotate(-223.07deg);
+      }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 180px;
+        left: -140px;
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border: 1px solid #e32124;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .differents {
+    padding: 100px 0 100px;
+    &__wrapper {
+      padding: 40px 40px;
+    }
+    &__item {
+      h3 {
+        font-size: 21.993px;
+      }
+      p {
+        font-size: 14px;
+      }
+      &_1,
+      &_2,
+      &_3,
+      &_4,
+      &_5 {
+        max-width: 100%;
+        margin-bottom: 40px;
+        position: static !important;
+        &::before {
+          display: none;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      &_1 > p {
+        max-width: 100%;
+      }
+    }
+  }
+}

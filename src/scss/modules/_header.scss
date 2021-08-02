@@ -1,0 +1,33 @@
+.header {
+  padding: 46.31px 0;
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  &__wrapper {
+    max-width: 947px;
+  }
+  p {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22em;
+  }
+  .phone {
+    font-weight: 600;
+    svg {
+      margin-right: 5px;
+    }
+  }
+  .menu {
+    max-width: 50px;
+    border: none;
+    background: none;
+    padding: 5px;
+    cursor: pointer;
+    div {
+      height: 4px;
+      background-color: $mainColorText;
+      margin: 4px 0;
+    }
+  }
+}

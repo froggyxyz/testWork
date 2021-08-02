@@ -1,0 +1,85 @@
+.certificates {
+  padding: 100px 0 100px;
+  background: linear-gradient(
+    180deg,
+    rgba(243, 243, 243, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 58.09%,
+    rgba(245, 245, 245, 0.5) 89.02%,
+    rgba(247, 246, 246, 0.5) 100%
+  );
+  &__heading {
+    margin-bottom: 61px;
+  }
+  p {
+    max-width: 640px;
+    margin-left: 23px;
+    font-family: $fontFamily;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+    color: $mainColorText;
+    opacity: 0.7;
+  }
+  &__item {
+    margin-right: 35px;
+    margin-bottom: 35px;
+    max-width: 308px;
+    min-height: 405px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px 90px 4px 4px;
+    & > p {
+      font-family: $fontFamily;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.2em;
+      color: $mainColorText;
+    }
+    .glass {
+      top: 50%;
+      left: 45%;
+    }
+    .mark {
+      right: 31.19px;
+      bottom: -13.95px;
+    }
+  }
+  .control {
+    border: none;
+    background: none;
+    img {
+      opacity: 0.7;
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      img {
+        opacity: 1;
+        transition: all 0.2s linear;
+      }
+    }
+    &_prev {
+      top: 0;
+      right: 90px;
+    }
+    &_next {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .certificates {
+    &__heading {
+      p {
+        font-size: 12px;
+      }
+    }
+    &__item {
+      & > p {
+        font-size: 16px;
+      }
+    }
+  }
+}
