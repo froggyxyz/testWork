@@ -86,16 +86,6 @@
     .js-business-slider {
       position: static;
     }
-    .slider-item {
-      &--text {
-        h3 {
-          font-size: 14px;
-        }
-        p {
-          font-size: 12px;
-        }
-      }
-    }
   }
 }
 
@@ -104,6 +94,12 @@
     .slider-item {
       &--text {
         padding: 18px;
+        h3 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+        }
       }
     }
   }
