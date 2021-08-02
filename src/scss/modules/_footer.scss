@@ -35,7 +35,6 @@
       }
     }
     ul {
-      // margin-right: 130px;
       list-style-image: url(../src/img/footer/marker.svg);
       h3 {
         font-family: $fontFamily;
@@ -109,10 +108,19 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
+    &__left {
+      svg {
+        margin-right: 5px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
     &__right {
       ul {
+        padding-left: 15px;
         h3 {
           font-size: 16.993px;
         }
@@ -122,13 +130,14 @@
       }
       .contacts {
         li > a {
-          font-size: 11px;
+          font-size: 14px;
         }
       }
     }
     &__bottom {
       p {
         font-size: 9px;
+        margin-bottom: 5px;
       }
     }
   }

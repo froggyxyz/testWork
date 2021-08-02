@@ -57,9 +57,8 @@
 
 @media (max-width: 1023px) {
   .intro {
-    padding: 100px 0 100px;
+    padding: 100px 0;
     &__wrapper {
-      max-width: 580px;
       border-radius: 35px;
       h1 {
         font-size: 40px;
@@ -70,3 +69,15 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .intro {
+    padding: 50px 0;
+    &__wrapper {
+      padding: 30px;
+      h1 {
+        font-size: 28px;
+      }
+    }
+  }
+} ;

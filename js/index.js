@@ -12,31 +12,56 @@ $(document).on('scroll', function () {
   else $('.js-to-top').removeClass('d-none');
 });
 
-if (document.documentElement.clientWidth > 1024) {
-  $(document).ready(function () {
-    $('.js-intro-slider').slick({
-      prevArrow: '.js-intro-prev',
-      nextArrow: '.js-intro-next',
-    });
-  });
+$('.js-intro-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '.js-intro-prev',
+  nextArrow: '.js-intro-next',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      },
+    },
+  ],
+});
 
-  $(document).ready(function () {
-    $('.js-business-slider').slick({
-      infinite: true,
-      prevArrow: '.js-business-prev',
-      nextArrow: '.js-business-next',
-    });
-  });
+$('.js-business-slider').slick({
+  prevArrow: '.js-business-prev',
+  nextArrow: '.js-business-next',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
 
-  $(document).ready(function () {
-    $('.js-certificates-slider').slick({
-      prevArrow: '.js-certificates-prev',
-      nextArrow: '.js-certificates-next',
-      slidesToShow: 4,
-      slidesToScroll: 4,
-    });
-  });
-}
+$('.js-certificates-slider').slick({
+  prevArrow: '.js-certificates-prev',
+  nextArrow: '.js-certificates-next',
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        centerMode: true,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
 openMenu = document.querySelector('.js-open-menu');
 openMenu.addEventListener('click', function () {

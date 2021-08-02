@@ -80,3 +80,13 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .school {
+    &__right {
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}
