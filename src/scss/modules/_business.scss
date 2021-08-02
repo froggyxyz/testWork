@@ -1,6 +1,11 @@
 .business {
+  overflow: hidden;
   padding: 120px 0;
   background: url(../src/img/business-bg.png) no-repeat;
+  .js-business-slider {
+    position: absolute;
+    right: -585px;
+  }
   &__wrapper {
     max-width: 566px;
     h2 {
@@ -19,6 +24,7 @@
     }
   }
   .slider-item {
+    margin-right: 30px;
     overflow: hidden;
     max-width: 645px;
     background: #ffffff;
@@ -72,6 +78,22 @@
     &__wrapper {
       p {
         font-size: 14px;
+      }
+      button {
+        margin-bottom: 50px;
+      }
+    }
+    .js-business-slider {
+      position: static;
+    }
+    .slider-item {
+      &--text {
+        h3 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+        }
       }
     }
   }

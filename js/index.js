@@ -34,6 +34,20 @@ $('.js-business-slider').slick({
   nextArrow: '.js-business-next',
   slidesToShow: 1,
   slidesToScroll: 1,
+  centerMode: true,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        infinite: true,
+      },
+    },
+  ],
 });
 
 $('.js-certificates-slider').slick({
